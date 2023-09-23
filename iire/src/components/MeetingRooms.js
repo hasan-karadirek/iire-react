@@ -1,11 +1,9 @@
 import React, { useState } from "react";
+import testImage from "../assets/123.jpg";
+import testImage2 from "../assets/222.jpeg";
 
 export default function MeetingRoom() {
-  const images = [
-    "http://oralinestore.com/wp-content/uploads/2021/11/IIRE_Meeting-room_Ambon_01.jpg",
-    "http://oralinestore.com/wp-content/uploads/2021/11/s1.jpg",
-    "http://oralinestore.com/wp-content/uploads/2021/11/IIRE_Meeting-room_Ambon_01.jpg",
-  ];
+  const images = [testImage, testImage2, testImage, testImage2];
   const [currentRoom, setCurrentRoom] = useState(0);
   const handleTabClick = (e) => {
     const elementId = parseInt(e.target.id);
@@ -24,11 +22,14 @@ export default function MeetingRoom() {
           recording equipment and broadband internet suitable for webcasting and
           wifi computers. Our translation booths are equipped with a wireless
           translation system where three languages can be simultaneously
-          translated and broadcast. We offer competitive, all-in prices for your
-          style of meeting, whether it is a residential conference of several
-          days or a short meeting of several hours. Contact us for a budget
-          which suites your needs.
+          translated and broadcast.
         </p>
+        <p>
+          We offer competitive, all-in prices for your style of meeting, whether
+          it is a residential conference of several days or a short meeting of
+          several hours.
+        </p>
+        <p>Contact us for a budget which suites your needs.</p>
       </div>
       <div
         className="meeting-rooms-image"

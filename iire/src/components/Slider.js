@@ -22,15 +22,24 @@ export default function Slider() {
   };
 
   return (
-    <div className="slider">
-      <div className="slide fade">
-        <span onClick={prevSlide} className="prev-button slide-button">
-          {"<"}
-        </span>
-        <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
-        <span onClick={nextSlide} className="slide-button next-button">
-          {">"}
-        </span>
+    <div className="slider-container">
+      <div className="slider">
+        <div className="slide fade">
+          <span onClick={prevSlide} className="prev-button slide-button">
+            {"<"}
+          </span>
+          <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
+          <span onClick={nextSlide} className="slide-button next-button">
+            {">"}
+          </span>
+        </div>
+      </div>
+      <div className="slider-message">
+        <h1>Welcome to IIRE Conference Centre</h1>
+        <p>
+          Welcome to IIRE Conference Centre Welcome to IIRE Conference Centre
+          Welcome to IIRE Conference Centre Welcome to IIRE Conference Centre
+        </p>
       </div>
     </div>
   );
